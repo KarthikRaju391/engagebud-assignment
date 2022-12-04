@@ -11,7 +11,7 @@ const Success: React.FC<Props> = (props) => {
     const [copied, setCopied] = useState(false);
     const { winningOffer } = props;
 
-    const couponCodes = ["XAXPDF20", "HSDREU02", "YUEOSQ87", "UBCXAA10", "ASDERK45", "UIESLA65"]
+    const couponCodes = ["XAXPDF20", "HSDREU02", "YUEOSQ87", "UBCXAA10", "ASDERK45", "UIESLA65", "SDFERG78"]
 
     useEffect(() => {
         setCopied(false);
@@ -37,9 +37,9 @@ const Success: React.FC<Props> = (props) => {
                     <h2 className="text-center text-3xl lg:text-3xl font-sans font-bold">Congrats! You Won: </h2>
                     <h1 className="text-center text-4xl lg:text-4xl font-sans font-bold mt-4">{winningOffer[1]}</h1>
                 </div>
-                <div className='flex flex-col items-center '>
+                <div className='flex flex-col items-center'>
                     <div className='flex mt-4 text-white justify-center w-3/4'>
-                        <div className="bg-lightGreen rounded-l-md px-5 text-4xl md:text-5xl py-7 font-semibold">
+                        <div className="bg-lightGreen rounded-l-md px-5 text-3xl md:text-5xl py-7 font-semibold">
                             {code}
                         </div>
                         <button onClick={(e) => handleCopy(e)} className="bg-secondary rounded-r-md text-2xl md:text-3xl flex items-center px-4 font-semibold">
