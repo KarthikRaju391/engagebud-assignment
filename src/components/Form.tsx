@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import MailIcon from '../assets/mail-svgrepo-com.svg'
-import PhoneIcon from '../assets/phone-svgrepo-com.svg'
 import validator from 'validator';
 import { useNavigate } from 'react-router-dom';
 
