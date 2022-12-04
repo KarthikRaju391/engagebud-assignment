@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,100;1,300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.blur {
+    animation: blur 10s;
+}
+
+.home {
+    background-image: url('./assets/background.svg'), url('./assets/background2.svg');
+    background-position: top, bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(1.5px);
+    }
+
+    80% {
+        filter: blur(1.5px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}
